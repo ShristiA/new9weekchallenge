@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div th:replace="base" :: navlinks></div>
+
+<div class="container">
+    <div class="jumbotron">
+
+
+        First Name: <span th:text="${profile.firstName}"></span><br>
+        Last Name: <span th:text="${profile.lastName }"></span><br/>
+        Email: <span th:text="${profile.email }"></span><br/>
+        Description: <span th:text="${profile.description }"></span><br/>
+        Image: <img th:src="${profile.headshot}"/>
+        <img src=https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=80 alt="picture of somebody"/>
+        </tr>
+        </tbody>
+        </table>
+
+    </div>
+</div>
+</body>
+</html>
